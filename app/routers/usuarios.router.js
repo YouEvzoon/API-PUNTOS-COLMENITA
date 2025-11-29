@@ -14,5 +14,9 @@ router.get('/:id', usuariosController.getUsuarioById);
 router.put('/:id', usuariosController.updateUsuario);
 // Eliminar usuario
 router.delete('/:id', usuariosController.deleteUsuario);
+// Restablecer contraseña (envía email)
+router.post('/restablecer-contrasena', usuariosController.restablecerContrasena);
+// Cambiar contraseña usando token
+router.post('/cambiar-contrasena', usuariosController.cambiarContrasena);
 
 module.exports = router;

@@ -29,7 +29,11 @@ module.exports = (sequelize, Sequelize) => {
     estado: {
       type: Sequelize.BOOLEAN,
       defaultValue: true
-    }
+    },
+      resetToken: {
+        type: Sequelize.STRING(255),
+        allowNull: true
+      }
   }, {
     tableName: 'usuarios',
     timestamps: false
