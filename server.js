@@ -19,10 +19,11 @@ const saldoPuntosRouter = require('./app/routers/saldo_puntos.router.js');
 const codigosPuntosRouter = require('./app/routers/codigos_puntos.router.js');
 
 const cors = require('cors')
+
 const corsOptions = {
-  origin: '*',
+  origin: 'https://frontend-puntos-colmenita.onrender.com',
   optionsSuccessStatus: 200
-}
+};
 app.use(cors(corsOptions));
 
 app.use(bodyParser.json());
